@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="250dp"
+	android:layout_width="wrap_content">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_height="match_parent"
+		android:background="@color/WHITE">
+
+		<LinearLayout
+			android:layout_height="45dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:layout_margin="2dp"
+				android:src="@drawable/file_type_unknown"
+				android:id="@+id/ImageView_Log"/>
+
+			<TextView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:gravity="left|center"
+				style="@style/AppTextThemeDark"
+				android:id="@+id/TextView_Log"
+				android:text="Logcat"
+				android:textSize="16dp"/>
+
+		</LinearLayout>
+
+		<View
+			android:layout_height="2dp"
+			android:background="@color/holo_blue_dark"
+			android:layout_width="match_parent"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:id="@+id/TextView_Print"
+			android:layout_margin="5dp"
+			android:textColor="#00AEFF"
+			android:textSize="20sp"/>
+
+	</LinearLayout>
+
+</ScrollView>
+

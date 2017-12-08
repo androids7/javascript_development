@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_height="40dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="重命名"
+		android:background="@drawable/holo_button_selector"
+		android:gravity="left|center"
+		android:paddingLeft="10dp"
+		android:id="@+id/reName"/>
+
+	<TextView
+		android:layout_height="40dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="删除"
+		android:background="@drawable/holo_button_selector"
+		android:gravity="left|center"
+		android:paddingLeft="10dp"
+		android:id="@+id/delete"/>
+
+	<TextView
+		android:layout_height="40dp"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="复制路径"
+		android:background="@drawable/holo_button_selector"
+		android:gravity="left|center"
+		android:paddingLeft="10dp"
+		android:id="@+id/copyPath"/>
+
+</LinearLayout>
+

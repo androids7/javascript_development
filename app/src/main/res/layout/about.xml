@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="40dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="left|center"
+		android:background="@drawable/android:bottom_bar">
+
+		<ImageView
+			android:layout_height="40dp"
+			android:layout_width="40dp"
+			android:src="@drawable/javascript"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="@string/app_name"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			style="@style/AppTextThemeLight"
+			android:typeface="serif"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_weight="1.0"
+		android:background="#252525">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			style="@style/AppTextThemeLight"
+			android:id="@+id/aboutTextView"
+			android:layout_margin="10dp"
+			android:typeface="normal"
+			android:textStyle="bold|normal"
+			android:textColorHighlight="#FFFFFF"
+			android:textSize="18dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/android:bottom_bar"
+		android:gravity="center"
+		android:orientation="horizontal"
+		android:paddingTop="3dip">
+
+		<Button
+			android:id="@+id/FeedButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dip"
+			android:layout_weight="0.5"
+			android:text="@string/app_feedback"
+			android:textColor="#00A8FF">
+
+		</Button>
+
+		<Button
+			android:id="@+id/CancelButton"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="10dip"
+			android:layout_weight="0.5"
+			android:textColor="#00A8FF"
+			android:text="@string/app_cancel">
+
+		</Button>
+
+	</LinearLayout>
+
+</LinearLayout>
+

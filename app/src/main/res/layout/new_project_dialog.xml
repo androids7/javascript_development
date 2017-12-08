@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:background="#9D9D9D">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="新建工程"
+				android:layout_width="match_parent"
+				android:textSize="25sp"
+				android:textColor="#717171"
+				android:background="#FFFFFF"
+				android:layout_marginBottom="1dp"
+				android:padding="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_margin="10dp">
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="应用名*"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextappName"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="应用包名"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextpackagename"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="应用图标"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextappicon"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="版本号"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextversionstring"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="内部版本号"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextversioncode"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="备注"
+				android:layout_margin="5dp"
+				android:id="@+id/newprojectdialogEditTextmsg"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:background="#6A6A6A">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="取消"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:background="@drawable/dialog_menu_button"
+				android:layout_marginTop="1dp"
+				android:layout_marginRight="1dp"
+				android:id="@+id/newprojectdialogcancel"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:text="创建"
+				android:background="@drawable/dialog_menu_button"
+				android:layout_marginTop="1dp"
+				android:id="@+id/newprojectdialogcreate"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

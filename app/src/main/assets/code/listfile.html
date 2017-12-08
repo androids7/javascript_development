@@ -1,0 +1,26 @@
+<html>
+<body>
+<!--包含系统头文件-->
+<script src="android.js"></script>
+<script>
+//获取sdcard目录下的json对象 得到文件和文件夹列表
+var obj=FileList("/sdcard");
+//读取其中的内容，并且输出
+
+//调用系统函数输出文件列表的长度
+//len=getJsonObjLength(obj.dir);//获取文件夹列表的长度
+len=getJsonObjLength(obj.file);
+len=len-1;//因为在这里变量是从0到len-1 比如一个数组29个长度，那么是0到28
+for(i=0;i<len;i++)
+{
+//将文件列表的文件路径等全部输出
+document.write(obj.file[i]+"<br>");
+
+//document.write(obj.dir[i]+"<br>"); //将文件夹列表的文件夹路径全部输出
+}
+
+</script>
+
+
+</body>
+</html>

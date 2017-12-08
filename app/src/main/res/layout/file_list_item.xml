@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		android:layout_height="45dip"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_marginBottom="1dp"
+		android:background="@drawable/holo_button_selector">
+
+		<ImageView
+			android:layout_height="40dip"
+			android:layout_width="40dip"
+			android:layout_marginLeft="20dp"
+			android:id="@+id/filelistitem_image"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="文件"
+			android:layout_width="match_parent"
+			android:layout_margin="5dp"
+			android:textSize="14sp"
+			android:id="@+id/filelistitem_title"
+			android:textColor="#4E4E4E"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

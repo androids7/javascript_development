@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<VideoView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:id="@+id/musicBackground"
+		android:layout_centerInParent="true"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_margin="10dp"
+		android:typeface="monospace"
+		android:textSize="20sp"
+		android:textColor="#5A5A5A"
+		android:text="利器能伤人，钝器也能伤人；恨能伤人，爱也能伤人。显然后者更让人痛不欲生。"
+		android:padding="10dp"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/musicTool">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/musicMoveLast"
+			android:text="&lt;&lt;"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/musicPlay"
+			android:text="暂停"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_weight="1.0"
+			android:id="@+id/musicMoveNext"
+			android:text="&gt;&gt;"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_above="@id/musicTool">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:id="@+id/musicNowTime"
+			android:textColor="#00CCFF"
+			android:paddingLeft="12dp"/>
+
+		<SeekBar
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/musicNowTime"
+			android:id="@+id/musicSeekBar"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:id="@+id/musicAllTime"
+			android:textColor="#00CCFF"
+			android:paddingRight="12dp"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		android:layout_height="45dip"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<ImageView
+			android:layout_height="35dip"
+			android:layout_width="35dip"
+			android:src="@drawable/folder_open"
+			android:layout_marginLeft="5dp"/>
+
+		<TextView
+			android:layout_height="match_parent"
+			android:text="/mnt/sdcard/MIDE/"
+			android:layout_width="match_parent"
+			android:gravity="left|center"
+			android:layout_weight="1.0"
+			android:layout_margin="10dp"
+			android:textSize="16sp"
+			android:id="@+id/filelist_title"
+			android:singleLine="true"
+			android:ellipsize="start"
+			android:textColor="#1B1B1B"/>
+
+		<ImageView
+			android:layout_height="30dip"
+			android:layout_width="30dip"
+			android:src="@drawable/ic_menu_more"
+			android:layout_margin="5dip"
+			android:background="@drawable/holo_button_selector"
+			android:id="@+id/filelist_more"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="2dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@color/holo_blue_dark"
+		android:id="@+id/filelist_line"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+		<ListView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/filelist_list"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

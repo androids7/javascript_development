@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material">
+	   <item name="android:windowNoTitle">false</item>
+       <item name="android:windowEnterAnimation">@anim/fade_in</item>
+       <item name="android:windowBackground">@drawable/background_holo_light</item>
+       <item name="android:windowExitAnimation">@anim/fade_out</item>
+       <!--<item name="android:textStyle">@style/AppTextThemeLight</item>-->
+	</style>
+    <style name="AppFullTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+    <style name="AppThemeLight" parent="@android:style/Theme.Holo.Light">
+       <item name="android:windowNoTitle">false</item>
+       <item name="android:windowBackground">@drawable/background_holo_light</item>
+       <item name="android:windowEnterAnimation">@anim/fade_in</item>
+       <item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+    <style name="AppNoTitleTheme" parent="@android:style/Theme.Light.NoTitleBar">
+       <item name="android:windowNoTitle">false</item>
+       <item name="android:windowEnterAnimation">@anim/fade_in</item>
+       <item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style>
+	<style name="AppTextThemeLight">
+		<item name="android:textColor">@color/TextWhite</item>
+		<item name="android:textSize">20dp</item>
+	</style>
+	<style name="AppTextThemeDark">
+		<item name="android:textColor">@color/TextBlack</item>
+		<item name="android:textSize">20dp</item>
+	</style>
+</resources>
