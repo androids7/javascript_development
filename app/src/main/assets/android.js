@@ -1,1 +1,34 @@
-ƌǀƬƘǄưƨƬńƨƐǘǄ´ǘǄǜ¤ǄưƠƀ°<Ǹ<¨¨〘풴渰䵘躀侘糰䟼轔<Ɛǔǔ¬ńƨƐǘǄǘƴƨǈ´ǘǄǜ¤ǄưƠƀ°ø<Ǡ<<ƌǀƬƘǄưƨƬŜƀƐƄČưƤƀ´ƌưƤƀƬƐƠƀ°<Ǹ<ǜƀǄǀǜƬƐǔǔ¬ŜƀƐƄČưƤƀ´ƌưƤƀƬƐƠƀ°ø<Ǡ<<ƌǀƬƘǄưƨƬČưƤƀĤưǘǄ´ƌưƤƀǔƐǄƴ°<Ǹ<ǜƀǄǀǜƬƀǌƐƤ´´¸Ɛǔǔ¬ČưƤƀĤưǘǄ´ƌưƤƀǔƐǄƴ°¸°°ø<Ǡ<<ƌǀƬƘǄưƨƬňǜưǄƀƄČưƤƀ´ƌưƤƀƬƐƠƀ¤ƘƨƬǄƀƬǄ°<Ǹ<ǜƀǄǀǜƬƐǔǔ¬ŜƀƐƄČưƤƀ´ƌưƤƀƬƐƠƀ¤ƘƨƬǄƀƬǄ°ø<Ǡ<<ƌǀƬƘǄưƨƬƈƀǄļǘƨƬĨƜƼĤƀƬƈǄƴ´ƼǘƨƬĨƜƼ°Ǹ<<ǌƐǜĤƀƬƈǄƴàÔø<<ƌƨǜ´ǌƐǜưǄƀƠưƬƼǘƨƬĨƜƼ°Ǹ<<ĤƀƬƈǄƴ¸¸ø<<Ǡ<<ǜƀǄǀǜƬĤƀƬƈǄƴø<<Ǡ
+function Toast(str,time)
+{
+//ః㔨ᮉፓ⎥ᏣἹᇺ⏐㤺
+app.Toastshow(str,time);
+}
+
+function ReadFile(filename)
+{
+return app.ReadFile(filename);
+}
+
+function FileList(filepath)
+{
+return eval("("+app.FileList(filepath)+")");
+}
+
+function WritedFile(filename,content)
+{
+return app.ReadFile(filename,content);
+}
+
+function getJsonObjLength(jsonObj) {
+
+        var Length = 0;
+
+        for (var item in jsonObj) {
+
+            Length++;
+
+        }
+
+        return Length;
+
+}

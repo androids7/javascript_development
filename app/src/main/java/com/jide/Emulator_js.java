@@ -120,14 +120,7 @@ public class Emulator_js extends Activity
 					byte[] byt = new byte[in.available()];
 					in.read(byt);
 				
-					String res=Encode.decode(new String(byt,"utf-8"));
-					//ZipUtil.uncompress(new String(byt,"utf-8"));
-					
-					byte[] fina=res.getBytes("utf-8");
-					
-					InputStream ina=new ByteArrayInputStream(fina);
-					
-				return new WebResourceResponse("application/x-javascript", "utf-8",ina);
+				return new WebResourceResponse("application/x-javascript", "utf-8",in);
 			
 				
 				} 
@@ -162,24 +155,8 @@ public class Emulator_js extends Activity
 
 						byte[] byt = new byte[in.available()];
 						in.read(byt);
-						/*
-						 for(int i=0;i<in.available();i++)
-						 {
-						 byt[i]-=2;
-						 }
-						 */
-						String res=Encode.decode(new String(byt,"utf-8"));
-						//ZipUtil.uncompress(new String(byt,"utf-8"));
-
-						byte[] fina=res.getBytes("utf-8");
-
-						InputStream ina=new ByteArrayInputStream(fina);
-
-						/*
-						 env=new Env();
-						 env.getA();
-						 */
-						return new WebResourceResponse("application/x-javascript", "utf-8",ina);
+						
+						return new WebResourceResponse("application/x-javascript", "utf-8",in);
 						//getAssets().open("android.js"));
 
 					} 
